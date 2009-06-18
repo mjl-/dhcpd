@@ -1,0 +1,22 @@
+<../../mkconfig
+
+TARG=\
+	ipval.dis\
+	dhcp.dis\
+
+MODULES=\
+	ipval.m\
+	dhcp.m\
+
+SYSMODULES=\
+	attrdb.m\
+	bufio.m\
+	encoding.m\
+	ether.m\
+	ip.m\
+	lists.m\
+	sys.m\
+
+DISBIN=$ROOT/dis/lib
+
+<$ROOT/mkfiles/mkdis

@@ -1,0 +1,25 @@
+<../../../mkconfig
+
+TARG=\
+	#testipval.dis\
+	dhcpd.dis\
+
+MODULES=\
+	../../lib/dhcp.m\
+	../../lib/ipval.m\
+
+SYSMODULES=\
+	arg.m\
+	bufio.m\
+	daytime.m\
+	draw.m\
+	encoding.m\
+	ether.m\
+	ip.m\
+	lists.m\
+	string.m\
+	sys.m\
+
+DISBIN=$ROOT/dis/ip
+
+<$ROOT/mkfiles/mkdis
