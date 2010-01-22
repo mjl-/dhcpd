@@ -10,9 +10,11 @@ ip/dhcpd is a dhcpd (it also speaks bootp).  see the manual page for more inform
 
 # install
 
-first, ensure a "mkconfig" file is present.  a bind/symlink to the
-mkconfig of your inferno install should do.  now "mk install" to
-compile and install the files.
+make sure you have $ROOT set.  now run "mk install" to compile and
+install the files.
+
+when building from within inferno, insert SYSHOST=Inferno and ROOT=
+in the mk invocations to override the values in the mkconfig.
 
 
 # latest version
@@ -38,6 +40,7 @@ mechiel lukkien, reachable at mechiel@ueber.net or mechiel@xs4all.nl.
 - if a lease time is requested, and it's lower than the server-assigned (and reasonable), use the clients lease
 - honour max message size in request?
 - do host->ip conversion on values from ndb that have to be ip in dhcp options?  or just require them to be ip's?
+- logging?
 - implement bootp requests
 - dhcp message option overload, for parsing
 - respond with unicast in same cases (unless broadcast flag is set)
